@@ -716,24 +716,29 @@ section,
 }
 
 .hero .container {
-  position: relative;
+  position: absolute;  /* Ensure absolute positioning */
+  top: 40%;  /* Adjust to center the text in the circle */
+  left: 30%; /* Move text towards the right into the circle */
+  transform: translate(-50%, -50%);  /* Perfect centering */
   z-index: 3;
+  text-align: center;
 }
 
 .hero h2 {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  color: white; /* Ensure text visibility */
 }
 
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
-  color: var(--heading-color);
+  color: white; /* Ensures readability */
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
+  color: white;
   background: var(--accent-color);
   font-family: var(--heading-font);
   text-transform: uppercase;
@@ -744,7 +749,7 @@ section,
   padding: 12px 40px;
   border-radius: 50px;
   transition: 0.5s;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .hero .btn-get-started:hover {
@@ -758,6 +763,11 @@ section,
 
   .hero p {
     font-size: 18px;
+  }
+
+  .hero .container {
+    left: 50%;  /* Adjust for mobile screens */
+    top: 55%;
   }
 }
 
