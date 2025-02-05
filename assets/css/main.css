@@ -767,7 +767,7 @@ section,
 
   .hero .container {
     left: 50%;  /* Adjust for mobile screens */
-    top: 55%;
+    top: 25%;
   }
 }
 
