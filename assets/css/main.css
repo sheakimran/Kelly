@@ -718,7 +718,7 @@ section,
 .hero .container {
   position: absolute;  /* Ensure absolute positioning */
   top: 40%;  /* Adjust to center the text in the circle */
-  left: 50%; /* Move text towards the right into the circle */
+  left: 30%; /* Move text towards the right into the circle */
   transform: translate(-50%, -50%);  /* Perfect centering */
   z-index: 3;
   text-align: center;
